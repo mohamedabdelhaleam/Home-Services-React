@@ -5,6 +5,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { baseUrl } from '../api/Api';
+import { Helmet } from 'react-helmet';
 const BuyServices =  () => {
     const [name ,setName] =useState("")
     const [services ,setServices] =useState([])
@@ -58,6 +59,13 @@ const BuyServices =  () => {
     }
   return (
     <div>
+        <Helmet>
+
+        <title>
+            طلب خدمة | مركز الدكتور أحمد أحمد
+        </title>
+        </Helmet>
+
         <Header />
         <div className='py-16 '>
       <div className='m-auto max-w-[1280px] flex justify-evenly items-center flex-row-reverse  xs:justify-center'>

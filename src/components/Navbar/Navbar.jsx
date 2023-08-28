@@ -15,6 +15,7 @@ const Navbar = () => {
             <div className='flex justify-around items-center flex-row-reverse'>
               <ul className='flex flex-row-reverse justify-between items-center text-white gap-2 xs:hidden sm:hidden'>
                   <li className=' px-3'><NavLink to='/' className='py-2 hover:border-b-white hover:border-b-2'>الرئيسية</NavLink></li>
+                  <li className=' px-3'><NavLink to='/about-us' className='py-2 hover:border-b-white hover:border-b-2'>من نحن</NavLink></li>
                   <li className=' px-3'><NavLink to='/services' className='py-2 hover:border-b-white hover:border-b-2'>خدماتنا</NavLink></li>
                   <li className=' px-3'><NavLink to='/buy-service' className='py-2 hover:border-b-white hover:border-b-2'>طلب خدمة</NavLink></li>
                   <li className=' px-3'><NavLink to='/rate-services' className='py-2 hover:border-b-white hover:border-b-2'>تقيم خدمة</NavLink></li>

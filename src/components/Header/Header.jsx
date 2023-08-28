@@ -19,7 +19,7 @@ const Header = () => {
         </div>
         <div>
             <img src={main}
-                width={500}
+                width={600}
                 height={500}
                 data-aos="zoom-out-right"
                 className='xs:hidden sm:hidden md:hidden' alt="" srcset="" />

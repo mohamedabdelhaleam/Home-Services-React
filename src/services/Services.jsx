@@ -4,6 +4,7 @@ import ServicesCard from '../components/ServicesCard/ServicesCard';
 import { baseUrl } from '../api/Api';
 import axios from 'axios';
 import Loader from '../Loader/Loader'
+import { Helmet } from 'react-helmet';
 
 const Services =  () => {
   const [services ,setServices] =useState([])
@@ -22,6 +23,12 @@ const Services =  () => {
 
   return (
     <div>
+      <Helmet>
+        <title>
+
+      خدماتنا | مركز الدكتور احمد أحمد
+        </title>
+      </Helmet>
       {
         isLoading ?(<Loader />) :(
             <div>
