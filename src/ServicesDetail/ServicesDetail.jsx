@@ -49,16 +49,16 @@ const ServicesDetails =   () => {
       </Helmet>
       
       <div className='m-auto max-w-[1280px]'>
-        <div className=' flex justify-between items-center gap-8 text-right flex-row-reverse xs:flex-col sm:flex-col md:flex-col'>
+        <div className=' flex justify-between items-center gap-8 text-right flex-row-reverse xs:flex-col sm:flex-col md:flex-col mb-6'>
           <img src={product.image} alt="" srcset="" className='min-w-[600px] md:min-h-[600px] xs:min-w-[300px] sm:min-w-[360px] md:min-w-[450px]'/>
           <div>
             <div className='text-4xl mb-8 pb-4 border-b-2 border-[#CE4642] text-[#CE4642]'>{product.name}</div>
-            <div className='text-lg py-4' dangerouslySetInnerHTML={createMarkup()}/>
-            <div><Link to='/buy-service' className='bg-[#CE4642] text-white py-2 px-6 text-xl font-semibold rounded-md'>اطلب الخدمة</Link></div>
+            <div className='py-4 mb-4' dangerouslySetInnerHTML={createMarkup()}/>
+            <div><Link to='/buy-service' className='bg-[#CE4642] text-white py-2 px-6 my-8 text-xl font-semibold rounded-md'>اطلب الخدمة</Link></div>
           </div>
         </div>
   
-          <div className='text-center text-4xl py-8'>بعض الأسئلة الشائعة عن الخدمة</div>
+          <div className={productQuestions.length <= 0 ? "hidden" : 'text-center text-4xl py-8'}>بعض الأسئلة الشائعة عن الخدمة</div>
           <div className= "flex flex-col justify-evenly items-center gap-5">
             {
               productQuestions.map((ques)=>(
@@ -67,7 +67,7 @@ const ServicesDetails =   () => {
               ))
             }
           </div>
-          <div className='text-center text-4xl py-8'>تقيمات الخدمة</div>
+          <div className={productRates.length <= 0 ? "hidden" : 'text-center text-4xl py-8'}>تقيمات الخدمة</div>
           <div className= "grid grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 md:grid-cols-2 gap-5 mb-12">
             {
               productRates.map((rate)=>(

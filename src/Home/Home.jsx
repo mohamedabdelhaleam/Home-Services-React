@@ -7,6 +7,7 @@ import Order from '../components/Order/Order'
 import About from '../components/About/About';
 import IntroVideo from "../components/IntroVideo/IntroVideo";
 import { Helmet } from 'react-helmet';
+import Slider from '../components/Slider/Slider';
 
 
 
@@ -18,7 +19,7 @@ const Home = () => {
                 الرئيسية | مركز الدكتور أحمد أحمد
               </title>
             </Helmet>
-            
+            <Slider />
             <Header />
             <About />
             <MiniServices />

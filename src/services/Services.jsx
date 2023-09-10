@@ -26,7 +26,7 @@ const Services =  () => {
       <Helmet>
         <title>
 
-      خدماتنا | مركز الدكتور احمد أحمد
+      خدماتنا | مركز الدكتور أمير
         </title>
       </Helmet>
       {
@@ -35,8 +35,8 @@ const Services =  () => {
             <header className='py-48 bg-[#F7F7F7] services-bg'>
               <div className='m-auto max-w-[1280px] flex justify-center items-center xs:px-4'>
                 <div className='text-center'>
-                  <div className='text-xl'>مركز دكتور أحمد أحمد » خدماتنا</div>
-                  <div className='text-4xl xs:2xl font-semibold'>خدمات مركز دكتور أحمد أحمد</div>
+                  <div className='text-xl'>مركز دكتور أمير » خدماتنا</div>
+                  <div className='text-4xl xs:2xl font-semibold'>خدمات مركز دكتور أمير</div>
                 </div>
               </div>
             </header>
