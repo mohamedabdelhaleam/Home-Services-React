@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { BiSolidClinic,BiSolidCommentDots } from "react-icons/bi";
-import { MdOutlineContactPhone } from "react-icons/md";
 import { AiFillInstagram,AiFillFacebook,AiFillTwitterSquare } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import { baseUrl } from '../../api/Api';
@@ -11,7 +9,7 @@ const Footer = () => {
     useEffect(()=>{
         axios.get(`${baseUrl}/services`).then(response =>{
         const data = response.data.services;
-        setServicesData(data)
+        setServicesData(data.splice(0,4))
         }).catch(error =>{
         console.log(error);
         })
