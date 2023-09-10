@@ -1,7 +1,5 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-//import Home from "./Home/Home";
-//import Services from './services/Services'
 import ServicesDetails from "./ServicesDetail/ServicesDetail";
 import BuyServices from "./buy-service/BuyServices";
 import RateServices from "./rate-services/RateServices";
