@@ -19,12 +19,13 @@
     "react-player": "^2.12.0",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
+    "react-slideshow-image": "^4.2.1",
     "react-toastify": "^9.1.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -D build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -D build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
